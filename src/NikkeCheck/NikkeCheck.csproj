@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <!-- .NET Framework 4.8 is built into Windows 10 (1903+) and Windows 11, so the exe runs without installing anything. -->
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AssemblyName>NikkeCheck</AssemblyName>
+    <RootNamespace>NikkeCheck</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DebugType>embedded</DebugType>
+    <Version>1.0.0</Version>
+    <Product>NIKKE PC Launcher Security Check</Product>
+    <AssemblyTitle>NIKKE PC 런처 보안 점검·복구 도구</AssemblyTitle>
+    <Description>NIKKE PC 런처 침해 사고(2026-11) 흔적 검사 및 복구 도구</Description>
+    <GenerateAppConfigFile>false</GenerateAppConfigFile>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="NikkeCheck.Tests" />
+  </ItemGroup>
+
+</Project>
