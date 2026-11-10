@@ -10,6 +10,16 @@
 
 > ⚠ 이 도구는 Level Infinite/SHIFT UP의 공식 프로그램이 아닙니다. 공식 공지와 공개된 보안 연구를 바탕으로 만든 비공식 도구입니다.
 
+## 다운로드
+
+[최신 Release](https://github.com/iskasian7/nikke_check/releases/latest)에서 `NikkeCheck.exe`를 받으세요.
+받은 파일이 변조되지 않았는지는 PowerShell에서 아래 명령으로 SHA-256을 구해, Release에 함께 올린
+`NikkeCheck.exe.sha256`의 값과 비교해 확인할 수 있습니다.
+
+```powershell
+Get-FileHash .\NikkeCheck.exe -Algorithm SHA256
+```
+
 ## 사용법
 
 1. 니케 게임, PC 런처(트레이 아이콘 포함), Google Chrome을 완전히 종료합니다.
